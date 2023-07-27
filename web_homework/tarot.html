@@ -1,0 +1,193 @@
+<html>
+<head>
+	<title>白蚁的秘密空间</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script type="text/javascript" src="time.js"></script>
+
+
+</head>
+<body onload="startTime()">
+	<div style="float:left;" id="clock"></div>
+	<div style="float:right;" id="visiter">亲爱的 来访者，您好！</div>
+
+	<div class="header">
+		<h1>欢迎来到我的个人主页</h1>
+	</div>
+	<div class="topnav">
+		<a href="/~s2021319010214/tarot.html" id="a_page">塔罗占卜</a>
+		<a href="/~s2021319010214/fate.html">缘分测试</a>
+		<a href="/~s2021319010214/town.html">我的家乡</a>
+		<a href="/~s2021319010214/intro.html">个人规划</a>
+		<a href="/~s2021319010214/homepage.html" id="a_home">回到首页</a>
+	</div>
+	<br/>
+
+<div class="card">
+	<h2>塔罗占卜</h2><br/>
+	<h4>通过22张大阿尔卡纳牌，来揭示今日运势的大体情况</h4><hr/><br/>
+	<h1>请充满虔诚地点击下方牌背，翻开这张牌，查看今日运势</h1><br/>
+	<h3>正是因为无法更改，无可违逆，只能接受，命运才会被称之为命运。——阿斯托洛吉斯·莫娜·梅姬斯图斯</h3><br/>
+	<p align="center">注意：请不要点击过多次数哦，否则占卜会失灵的！</p><br/>
+	<p align="center"><img  id="tarot" alt="牌背" src="牌背.jpg" onclick="random()" width="240" height="420"/></p><br/>
+	<h3 align="center" id="result"></h3><br/>
+	<p align="center" id="analysis"></p><br/>
+
+
+</div>
+
+<div class="footer">
+  <p>本页面小游戏结果仅供娱乐，请勿当真</p>
+</div>
+
+	<script type="text/javascript">
+		var imgBg=document.getElementById("tarot");
+		imgBg.onclick=function(){
+		a = Math.floor(Math.random() * (21 + 1));
+		b = Math.floor(Math.random() * (1 + 1));
+
+	if(b==1){
+		if(a==0){imgBg.src="0愚人正.png"
+		document.getElementById('result').innerHTML="愚人正位";
+		document.getElementById('analysis').innerHTML="代表起点。愚者的生活态度是无拘无束的，充满冒险精神。愚者心中有理想为“现在”而奋斗。";}
+		if(a==1){imgBg.src="1魔术师正.png"
+		document.getElementById('result').innerHTML="魔术师正位";
+		document.getElementById('analysis').innerHTML="代表得到天赋的创造力和无限的可能性。现在是着手新事物的时机了。";}
+		if(a==2){imgBg.src="2女祭司正.png"
+		document.getElementById('result').innerHTML="女祭司正位";
+		document.getElementById('analysis').innerHTML="代表信念萌芽，同时也按时要相信直觉，探索内心深处。";}
+		if(a==3){imgBg.src="3皇后正.png"
+		document.getElementById('result').innerHTML="皇后正位";
+		document.getElementById('analysis').innerHTML="代表丰硕的收获和爱心，意味着计划实现或是迈进一个新阶段。同时也代表家庭和谐。";}
+		if(a==4){imgBg.src="4国王正.png"
+		document.getElementById('result').innerHTML="国王正位";
+		document.getElementById('analysis').innerHTML="代表父亲，法律，生活稳定，也可以指碰到一个年纪及权力在你之上的人。也代表自律和努力而来的成功。";}
+		if(a==5){imgBg.src="5教主正.png"
+		document.getElementById('result').innerHTML="教主正位";
+		document.getElementById('analysis').innerHTML="代表你屈服于某人或某个团体依照他人的期望行事，流于形式和规矩。";}
+		if(a==6){imgBg.src="6情侣正.png"
+		document.getElementById('result').innerHTML="情侣正位";
+		document.getElementById('analysis').innerHTML="代表热恋。一段新关系的形成。也可是成为决定一段关系应否转变成功突破。";}
+		if(a==7){imgBg.src="7战车正.png"
+		document.getElementById('result').innerHTML="战车正位";
+		document.getElementById('analysis').innerHTML="代表由于坚持而成功，也意味着你对宿命正以理智，坚持抗拒旧传统。";}
+		if(a==8){imgBg.src="8力量正.png"
+		document.getElementById('result').innerHTML="力量正位";
+		document.getElementById('analysis').innerHTML="代表内心的力量足以面对任何的困难。";}
+		if(a==9){imgBg.src="9隐士正.png"
+		document.getElementById('result').innerHTML="隐士正位";
+		document.getElementById('analysis').innerHTML="代表一段反省的时间，象征内心探索及心灵上的引导，或者是由人帮助别人。";}
+		if(a==10){imgBg.src="10命运之轮正.png"
+		document.getElementById('result').innerHTML="命运之轮正位";
+		document.getElementById('analysis').innerHTML="代表改变，顺利迈向成功。";}
+		if(a==11){imgBg.src="11正义正.png"
+		document.getElementById('result').innerHTML="正义正位";
+		document.getElementById('analysis').innerHTML="代表结果的出现、诚实、负责任。也代表成功处理某项难题。";}
+		if(a==12){imgBg.src="12吊人正.png"
+		document.getElementById('result').innerHTML="吊人正位";
+		document.getElementById('analysis').innerHTML="代表顺从环境，静静地等待命运的安排，也可以代表一段反省的时光。";}
+		if(a==13){imgBg.src="13死神正.png"
+		document.getElementById('result').innerHTML="死神正位";
+		document.getElementById('analysis').innerHTML="代表改变，某个阶段的结束，去试试接纳它，迎接新的阶段来临。";}
+		if(a==14){imgBg.src="14节制正.png"
+		document.getElementById('result').innerHTML="节制正位";
+		document.getElementById('analysis').innerHTML="代表旅行、教学。也代表平行，包括现实与潜意识的融合，感性与理性的调和。";}
+		if(a==15){imgBg.src="15魔鬼正.png"
+		document.getElementById('result').innerHTML="魔鬼正位";
+		document.getElementById('analysis').innerHTML="代表野心支配了心灵。沉迷物质享受，缺乏心灵支柱。";}
+		if(a==16){imgBg.src="16高塔正.png"
+		document.getElementById('result').innerHTML="高塔正位";
+		document.getElementById('analysis').innerHTML="代表突变，暗示某种结构模式无法继续存在，要做出改变。";}
+		if(a==17){imgBg.src="17星辰正.png"
+		document.getElementById('result').innerHTML="星辰正位";
+		document.getElementById('analysis').innerHTML="代表信心希望及和平，经历变动后的平静，拥有了自由，寻回自己以及真正未来。";}
+		if(a==18){imgBg.src="18月亮正.png"
+		document.getElementById('result').innerHTML="月亮正位";
+		document.getElementById('analysis').innerHTML="暗示要面对恐惧，也正阻碍着你去做某些事情。";}
+		if(a==19){imgBg.src="19太阳正.png"
+		document.getElementById('result').innerHTML="太阳正位";
+		document.getElementById('analysis').innerHTML="代表欢乐，和平，幸福及创意。也有解放自己和自由的含义。";}
+		if(a==20){imgBg.src="20审判正.png"
+		document.getElementById('result').innerHTML="审判正位";
+		document.getElementById('analysis').innerHTML="代表清晰的判断，了解自己。";}
+		if(a==21){imgBg.src="21世界正.png"
+		document.getElementById('result').innerHTML="世界正位";
+		document.getElementById('analysis').innerHTML="象征永久和成功新时代的确立。";}
+	}
+
+
+	if(b==0){
+		if(a==0){imgBg.src="0愚人逆.png"
+		document.getElementById('result').innerHTML="愚人逆位";
+		document.getElementById('analysis').innerHTML="代表逃避问题和责任，固执和过分依赖他人意见。";}
+		if(a==1){imgBg.src="1魔术师逆.png"
+		document.getElementById('result').innerHTML="魔术师逆位";
+		document.getElementById('analysis').innerHTML="代表行为不切实际，缺乏目标，精神和情绪上的困扰，失去下面的态度。";}
+		if(a==2){imgBg.src="2女祭司逆.png"
+		document.getElementById('result').innerHTML="女祭司逆位";
+		document.getElementById('analysis').innerHTML="代表你忽略了你的直觉和内心感受，被纯粹的理智影响。";}
+		if(a==3){imgBg.src="3皇后逆.png"
+		document.getElementById('result').innerHTML="皇后逆位";
+		document.getElementById('analysis').innerHTML="代表家庭或两性关系中出现困难，过度理性而无法将感性一方表现出来。";}
+		if(a==4){imgBg.src="4国王逆.png"
+		document.getElementById('result').innerHTML="国王逆位";
+		document.getElementById('analysis').innerHTML="代表缺乏自律与退缩。";}
+		if(a==5){imgBg.src="5教主逆.png"
+		document.getElementById('result').innerHTML="教主逆位";
+		document.getElementById('analysis').innerHTML="代表新的思想形式。老旧观念的退却";}
+		if(a==6){imgBg.src="6情侣逆.png"
+		document.getElementById('result').innerHTML="情侣逆位";
+		document.getElementById('analysis').innerHTML="代表逃避责任与承诺，空想又或是一段关系的结束。";}
+		if(a==7){imgBg.src="7战车逆.png"
+		document.getElementById('result').innerHTML="战车逆位";
+		document.getElementById('analysis').innerHTML="代表被积压的情绪蒙闭、需要创新去突破旧传统。";}
+		if(a==8){imgBg.src="8力量逆.png"
+		document.getElementById('result').innerHTML="力量逆位";
+		document.getElementById('analysis').innerHTML="代表逃避内心的欲望和恐惧，消极抵抗。";}
+		if(a==9){imgBg.src="9隐士逆.png"
+		document.getElementById('result').innerHTML="隐士逆位";
+		document.getElementById('analysis').innerHTML="代表孤单，要回到力量牌上找寻内在的力量。";}
+		if(a==10){imgBg.src="10命运之轮逆.png"
+		document.getElementById('result').innerHTML="命运之轮逆位";
+		document.getElementById('analysis').innerHTML="代表也是改变，不过是面临困难，要回到隐士牌反省的课题上。";}
+		if(a==11){imgBg.src="11正义逆.png"
+		document.getElementById('result').innerHTML="正义逆位";
+		document.getElementById('analysis').innerHTML="代表相互指责，无休止的争议或诉讼。";}
+		if(a==12){imgBg.src="12吊人逆.png"
+		document.getElementById('result').innerHTML="吊人逆位";
+		document.getElementById('analysis').innerHTML="掉膘受到约束却拼命想得到自由，可惜时机未到，仍需忍耐。";}
+		if(a==13){imgBg.src="13死神逆.png"
+		document.getElementById('result').innerHTML="死神逆位";
+		document.getElementById('analysis').innerHTML="代表恐惧改变，也可能抗阻着他。";}
+		if(a==14){imgBg.src="14节制逆.png"
+		document.getElementById('result').innerHTML="节制逆位";
+		document.getElementById('analysis').innerHTML="节制代表过度沉迷欲望、金钱物质，缺乏目标。";}
+		if(a==15){imgBg.src="15魔鬼逆.png"
+		document.getElementById('result').innerHTML="魔鬼逆位";
+		document.getElementById('analysis').innerHTML="代表在寻找打破束缚的方法找寻新出路。";}
+		if(a==16){imgBg.src="16高塔逆.png"
+		document.getElementById('result').innerHTML="高塔逆位";
+		document.getElementById('analysis').innerHTML="代表你抗拒这种改变，但却不觉醒，这是越抗拒，越存在。";}
+		if(a==17){imgBg.src="17星辰逆.png"
+		document.getElementById('result').innerHTML="星辰逆位";
+		document.getElementById('analysis').innerHTML="代表空虚，寂寞和失去信心。";}
+		if(a==18){imgBg.src="18月亮逆.png"
+		document.getElementById('result').innerHTML="月亮逆位";
+		document.getElementById('analysis').innerHTML="代表存在内心的恐惧或是尚未解决的问题开始显示出来，找寻星辰的力量去克服吧。";}
+		if(a==19){imgBg.src="19太阳逆.png"
+		document.getElementById('result').innerHTML="太阳逆位";
+		document.getElementById('analysis').innerHTML="代表心中仍存在恐惧产生不安。";}
+		if(a==20){imgBg.src="20审判逆.png"
+		document.getElementById('result').innerHTML="审判逆位";
+		document.getElementById('analysis').innerHTML="代表用消极的方法去填补内心的空虚，忽略内心的互换。";}
+		if(a==21){imgBg.src="21世界逆.png"
+		document.getElementById('result').innerHTML="世界逆位";
+		document.getElementById('analysis').innerHTML="代表判断模糊不清，掌握不到机会。";}
+	}
+
+		}
+	</script>
+
+
+
+</body>
+</html>
