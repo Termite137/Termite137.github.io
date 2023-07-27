@@ -1,0 +1,8 @@
+# 初始化git仓库
+git init
+# 暂存修改
+git add .
+# 提交代码，附加提交信息
+git commit -m "feat(github-pages-tutorial): 添加网站搭建教程"
+# 将当前分支（主分支）从默认的master改名为main，遵循GitHub的新习惯
+git branch -M main
