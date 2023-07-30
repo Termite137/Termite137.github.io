@@ -4,7 +4,7 @@ function startTime(){
 	var y=today.getMonth()+1;
 	var r=today.getDate();
 	var w=today.getDay();
-	var chnNumChar = ["零","一","二","三","四","五","六","日"];
+	var chnNumChar = ["日","一","二","三","四","五","六"];
 	var h=today.getHours();
 	var m=today.getMinutes();
 	var s=today.getSeconds();
